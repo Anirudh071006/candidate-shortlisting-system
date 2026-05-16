@@ -33,7 +33,7 @@ function App() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/candidates",
+        "https://candidate-shortlisting-backend-hz6j.onrender.com/api/candidates",
         {
           ...candidate,
           skills: candidate.skills.split(",")
@@ -57,7 +57,7 @@ function App() {
     try {
 
       const response = await axios.post(
-        "http://localhost:5000/api/match",
+        "https://candidate-shortlisting-backend-hz6j.onrender.com/api/match",
         {
           requiredSkills: ["React", "Node.js"],
           minExperience: 1
@@ -81,7 +81,7 @@ function App() {
     try {
 
       const response = await axios.post(
-        "http://localhost:5000/api/ai/shortlist",
+        "https://candidate-shortlisting-backend-hz6j.onrender.com/api/ai/shortlist",
         {
           requiredSkills: ["React", "Node.js"],
           minExperience: 1
